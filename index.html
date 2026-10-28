@@ -1,680 +1,594 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#090a09" />
 
-    <meta
-      name="description"
-      content="Anastasiia Serhiieva — UI/UX designer and front-end developer creating thoughtful, beautiful digital experiences."
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#090a09" />
 
-    <title>Anastasiia Serhiieva — Designer & Developer</title>
+  <meta name="description"
+    content="Anastasiia Serhiieva — UI/UX designer and front-end developer creating thoughtful, beautiful digital experiences." />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <title>Anastasiia Serhiieva — Designer & Developer</title>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
-  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <!-- BACKGROUND EFFECTS -->
-    <div class="noise" aria-hidden="true"></div>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
 
-    <div class="scroll-track" aria-hidden="true">
-      <div class="scroll-progress"></div>
+<body>
+  <!-- BACKGROUND EFFECTS -->
+  <div class="noise" aria-hidden="true"></div>
+
+  <div class="scroll-track" aria-hidden="true">
+    <div class="scroll-progress"></div>
+  </div>
+
+  <div class="cursor-orbit" aria-hidden="true"></div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Anastasiia home">
+      <span class="brand-symbol"> a<span class="brand-dot">.</span> </span>
+
+      <span class="brand-label">
+        ANASTASIIA<br />
+        SERHIIEVA
+      </span>
+    </a>
+
+    <div class="header-availability">
+      SCROLL TO EXPLORE
+      <span class="arrow-down">↓</span>
     </div>
 
-    <div class="cursor-orbit" aria-hidden="true"></div>
+    <button class="menu-toggle corner-button" type="button" aria-expanded="false" aria-controls="menu-panel">
+      <span class="menu-label">MENU</span>
 
-    <!-- HEADER -->
-    <header class="site-header" id="top">
-      <a class="brand" href="#top" aria-label="Anastasiia home">
-        <span class="brand-symbol"> a<span class="brand-dot">.</span> </span>
+      <span class="menu-icon">
+        <i></i>
+        <i></i>
+      </span>
+    </button>
+  </header>
 
-        <span class="brand-label">
-          ANASTASIIA<br />
-          SERHIIEVA
-        </span>
-      </a>
+  <!-- FULLSCREEN MENU -->
+  <div class="menu-panel" id="menu-panel" aria-hidden="true" inert>
+    <div class="menu-panel-inner">
+      <p class="eyebrow">EXPLORE / 2026</p>
 
-      <div class="header-availability">
-        SCROLL TO EXPLORE
-        <span class="arrow-down">↓</span>
+      <nav class="menu-navigation" aria-label="Main navigation">
+        <a href="#top">
+          <sup>01</sup>
+          <span>Home</span>
+          <span class="menu-arrow">↗</span>
+        </a>
+
+        <a href="#about">
+          <sup>02</sup>
+          <span>About</span>
+          <span class="menu-arrow">↗</span>
+        </a>
+
+        <a href="#work">
+          <sup>03</sup>
+          <span>Projects</span>
+          <span class="menu-arrow">↗</span>
+        </a>
+
+        <a href="#contact">
+          <sup>04</sup>
+          <span>Contact</span>
+          <span class="menu-arrow">↗</span>
+        </a>
+      </nav>
+
+      <div class="menu-bottom">
+        <span>LET'S MAKE SOMETHING MATTER.</span>
+
+        <a href="mailto:simitopolis1998@gmail.com">
+          SIMITOPOLIS1998@GMAIL.COM ↗
+        </a>
       </div>
+    </div>
+  </div>
 
-      <button
-        class="menu-toggle corner-button"
-        type="button"
-        aria-expanded="false"
-        aria-controls="menu-panel"
-      >
-        <span class="menu-label">MENU</span>
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" aria-labelledby="hero-title">
+      <!-- ANIMATED LOGO -->
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-halo hero-halo-one"></div>
+        <div class="hero-halo hero-halo-two"></div>
 
-        <span class="menu-icon">
-          <i></i>
-          <i></i>
+        <span class="orbit-mark">
+          AVAILABLE<br />
+          FOR FREELANCE
         </span>
-      </button>
-    </header>
 
-    <!-- FULLSCREEN MENU -->
-    <div class="menu-panel" id="menu-panel" aria-hidden="true" inert>
-      <div class="menu-panel-inner">
-        <p class="eyebrow">EXPLORE / 2026</p>
+        <div class="hero-glyph">a<span>.</span></div>
 
-        <nav class="menu-navigation" aria-label="Main navigation">
-          <a href="#top">
-            <sup>01</sup>
-            <span>Home</span>
-            <span class="menu-arrow">↗</span>
-          </a>
-
-          <a href="#about">
-            <sup>02</sup>
-            <span>About</span>
-            <span class="menu-arrow">↗</span>
-          </a>
-
-          <a href="#work">
-            <sup>03</sup>
-            <span>Projects</span>
-            <span class="menu-arrow">↗</span>
-          </a>
-
-          <a href="#contact">
-            <sup>04</sup>
-            <span>Contact</span>
-            <span class="menu-arrow">↗</span>
-          </a>
-        </nav>
-
-        <div class="menu-bottom">
-          <span>LET'S MAKE SOMETHING MATTER.</span>
-
-          <a href="mailto:simitopolis1998@gmail.com">
-            SIMITOPOLIS1998@GMAIL.COM ↗
-          </a>
+        <div class="hero-art-caption caption-left">
+          IDEAS INTO<br />
+          INTERFACES
         </div>
       </div>
-    </div>
 
-    <main>
-      <!-- HERO SECTION -->
-      <section class="hero" aria-labelledby="hero-title">
-        <!-- ANIMATED LOGO -->
-        <div class="hero-art" aria-hidden="true">
-          <div class="hero-halo hero-halo-one"></div>
-          <div class="hero-halo hero-halo-two"></div>
+      <!-- HERO TEXT -->
+      <div class="hero-bottom">
+        <div class="hero-headline-wrap">
+          <p class="hero-intro reveal">
+            HELLO, I'M ANASTASIIA — DESIGNER & FRONT-END DEVELOPER
+          </p>
 
-          <span class="orbit-mark">
-            AVAILABLE<br />
-            FOR FREELANCE
+          <h1 id="hero-title" class="hero-headline">
+            <span class="headline-line reveal"> CREATING </span>
+
+            <span class="headline-line reveal">
+              <em>DIGITAL</em>
+              WORLDS<span class="headline-period">.</span>
+            </span>
+          </h1>
+        </div>
+
+        <div class="hero-footnotes">
+          <span>ANASTASIIA SERHIIEVA</span>
+
+          <span> UI/UX DESIGN & FRONT-END DEVELOPMENT </span>
+
+          <span>
+            BASED IN USA
+            <span class="tiny-cross">✳</span>
           </span>
+        </div>
+      </div>
+    </section>
 
-          <div class="hero-glyph">a<span>.</span></div>
+    <!-- ANIMATED MARQUEE -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-inner">
+        <span>
+          DESIGN WITH INTENTION
+          <b>✳</b>
+          DEVELOP WITH PURPOSE
+          <b>✳</b>
+          DESIGN WITH INTENTION
+          <b>✳</b>
+          DEVELOP WITH PURPOSE
+          <b>✳</b>&nbsp;
+        </span>
 
-          <div class="hero-art-caption caption-left">
-            IDEAS INTO<br />
-            INTERFACES
-          </div>
+        <span>
+          DESIGN WITH INTENTION
+          <b>✳</b>
+          DEVELOP WITH PURPOSE
+          <b>✳</b>
+          DESIGN WITH INTENTION
+          <b>✳</b>
+          DEVELOP WITH PURPOSE
+          <b>✳</b>&nbsp;
+        </span>
+      </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section class="about section-shell" id="about" aria-labelledby="about-heading">
+      <div class="section-side">
+        <span class="section-index"> [ 01 / ABOUT ] </span>
+
+        <span class="side-line"></span>
+
+        <span class="side-note"> A LITTLE INTRODUCTION </span>
+      </div>
+
+      <div class="about-main">
+        <div class="about-heading-group reveal">
+          <p class="eyebrow muted">NICE TO MEET YOU</p>
+
+          <h2 id="about-heading">
+            BEHIND THE<br />
+            <em>PIXELS.</em>
+          </h2>
         </div>
 
-        <!-- HERO TEXT -->
-        <div class="hero-bottom">
-          <div class="hero-headline-wrap">
-            <p class="hero-intro reveal">
-              HELLO, I'M ANASTASIIA — DESIGNER & FRONT-END DEVELOPER
+        <div class="about-layout">
+          <!-- ABOUT VISUAL -->
+          <!-- MY PHOTO -->
+
+          <div class="about-portrait reveal">
+            <img src="pic/me.jpg" alt="Anastasiia Serhiieva" class="portrait-photo" />
+
+            <!-- TOP TEXT -->
+            <div class="portrait-top">
+              CREATIVE THINKING<br />
+              DIGITAL MAKING
+            </div>
+
+            <!-- BOTTOM TEXT -->
+            <div class="portrait-bottom">ANASTASIIA © 2026</div>
+          </div>
+          <!-- ABOUT TEXT -->
+          <div class="about-copy reveal">
+            <p class="about-lede">
+              I bring <span>ideas</span> to life through design and code.
             </p>
 
-            <h1 id="hero-title" class="hero-headline">
-              <span class="headline-line reveal"> CREATING </span>
+            <p>
+              Hi, I'm Anastasiia, a Design Engineer with a background in UI/UX design. I'm passionate about creating
+              websites that feel as good as they look.
+              I love turning complex ideas into intuitive, thoughtful, and visually striking digital experiences.
+              From the first sketch in Figma to the final line of code, I care about every little detail.
+            </p>
 
-              <span class="headline-line reveal">
-                <em>DIGITAL</em>
-                WORLDS<span class="headline-period">.</span>
-              </span>
-            </h1>
+            <p>
+              From the first sketch to the final interaction, I care about
+              every little detail.
+            </p>
+
+            <a class="text-link" href="#contact">
+              <span> MORE ABOUT WORKING TOGETHER </span>
+
+              <span class="circle-arrow">↗</span>
+            </a>
           </div>
-
-          <div class="hero-footnotes">
-            <span>ANASTASIIA SERHIIEVA</span>
-
-            <span> UI/UX DESIGN & FRONT-END DEVELOPMENT </span>
-
-            <span>
-              BASED IN USA
-              <span class="tiny-cross">✳</span>
-            </span>
-          </div>
-        </div>
-      </section>
-
-      <!-- ANIMATED MARQUEE -->
-      <div class="ticker" aria-hidden="true">
-        <div class="ticker-inner">
-          <span>
-            DESIGN WITH INTENTION
-            <b>✳</b>
-            DEVELOP WITH PURPOSE
-            <b>✳</b>
-            DESIGN WITH INTENTION
-            <b>✳</b>
-            DEVELOP WITH PURPOSE
-            <b>✳</b>&nbsp;
-          </span>
-
-          <span>
-            DESIGN WITH INTENTION
-            <b>✳</b>
-            DEVELOP WITH PURPOSE
-            <b>✳</b>
-            DESIGN WITH INTENTION
-            <b>✳</b>
-            DEVELOP WITH PURPOSE
-            <b>✳</b>&nbsp;
-          </span>
         </div>
       </div>
+    </section>
 
-      <!-- ABOUT SECTION -->
-      <section
-        class="about section-shell"
-        id="about"
-        aria-labelledby="about-heading"
-      >
-        <div class="section-side">
-          <span class="section-index"> [ 01 / ABOUT ] </span>
+    <!-- EXPERTISE SECTION -->
+    <section class="expertise section-shell" id="expertise" aria-labelledby="expertise-heading">
+      <div class="section-side">
+        <span class="section-index"> [ 02 / EXPERTISE ] </span>
 
-          <span class="side-line"></span>
+        <span class="side-line"></span>
 
-          <span class="side-note"> A LITTLE INTRODUCTION </span>
-        </div>
+        <span class="side-note"> THINGS I LOVE TO DO </span>
+      </div>
 
-        <div class="about-main">
-          <div class="about-heading-group reveal">
-            <p class="eyebrow muted">NICE TO MEET YOU</p>
+      <div class="expertise-main">
+        <p class="eyebrow muted reveal">WHAT I BRING TO THE TABLE</p>
 
-            <h2 id="about-heading">
-              BEHIND THE<br />
-              <em>PIXELS.</em>
-            </h2>
+        <h2 id="expertise-heading" class="section-big-heading reveal">
+          A LITTLE BIT<br />
+          OF <em>EVERYTHING.</em>
+        </h2>
+
+        <div class="skill-rows">
+          <div class="skill-row reveal">
+            <span class="skill-num">01</span>
+
+            <h3>UI / UX Design</h3>
+
+            <p>
+              Interfaces, visual systems, prototypes, user-centered
+              experiences.
+            </p>
+
+            <span class="skill-plus">✳</span>
           </div>
 
-          <div class="about-layout">
-            <!-- ABOUT VISUAL -->
-            <!-- MY PHOTO -->
+          <div class="skill-row reveal">
+            <span class="skill-num">02</span>
 
-            <div class="about-portrait reveal">
-              <img
-                src="pic/me.jpg"
-                alt="Anastasiia Serhiieva"
-                class="portrait-photo"
-              />
+            <h3>Front-end Development</h3>
 
-              <!-- TOP TEXT -->
-              <div class="portrait-top">
-                CREATIVE THINKING<br />
-                DIGITAL MAKING
+            <p>
+              Responsive, interactive experiences crafted with modern web
+              tools.
+            </p>
+
+            <span class="skill-plus">✳</span>
+          </div>
+
+          <div class="skill-row reveal">
+            <span class="skill-num">03</span>
+
+            <h3>Creative Collaboration</h3>
+
+            <p>
+              Exploring ideas together and shaping them into something
+              memorable.
+            </p>
+
+            <span class="skill-plus">✳</span>
+          </div>
+        </div>
+
+        <!-- TECHNOLOGIES -->
+        <div class="toolbox reveal">
+          <span class="eyebrow muted"> MY TOOLBOX — </span>
+
+          <div>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JAVASCRIPT</span>
+            <span>REACT</span>
+            <span>NODE.JS</span>
+            <span>FIGMA</span>
+            <span>GIT</span>
+            <span>GITHUB</span>
+            <span>PHOTOSHOP</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="work" id="work" aria-labelledby="work-heading">
+      <div class="work-heading section-padding">
+        <div class="work-heading-top">
+          <span class="section-index"> [ 03 / SELECTED PROJECTS ] </span>
+
+          <span> 2024 — 2026 / PERSONAL SELECTION </span>
+        </div>
+
+        <h2 id="work-heading" class="reveal">
+          SELECTED<br />
+          <em> WORK<span class="headline-period">.</span> </em>
+        </h2>
+
+        <p class="work-summary reveal">
+          A few projects where strategy, creativity and pixels came together.
+        </p>
+      </div>
+
+      <div class="projects">
+        <!-- PROJECT 01 -->
+        <article class="project project-guide" data-project="01">
+          <a class="project-visual" href="https://www.behance.net/gallery/256083355/AeroLoft" target="_blank"
+            rel="noopener noreferrer" aria-label="View AeroLoft project on Behance">
+            <img src="pic/project.png" alt="SPLASH Studio" class="project-cover" />
+
+            <div class="visual-top">
+              <span>DESIGN / STUDIO</span>
+              <span>CASE 001 ↗</span>
+            </div>
+
+            <!-- CSS BOOK MOCKUP -->
+            <div class="guide-book guide-book-back">
+              <div class="guide-sun"></div>
+            </div>
+
+            <div class="guide-book guide-book-front">
+              <div class="book-grid"></div>
+
+              <div class="book-top">
+                SPLASH<br />
+                STUDIO
               </div>
 
-              <!-- BOTTOM TEXT -->
-              <div class="portrait-bottom">ANASTASIIA © 2026</div>
-            </div>
-            <!-- ABOUT TEXT -->
-            <div class="about-copy reveal">
-              <p class="about-lede">
-                I bring <span>ideas</span> to life through design and code.
-              </p>
+              <strong>
+                MAKE<br />
+                <i>GOOD</i><br />
+                DESIGN.
+              </strong>
 
-              <p>
-                I'm a front-end developer with a UI/UX background, passionate
-                about building websites that feel as good as they look. I love
-                turning complex ideas into intuitive, thoughtful and visually
-                striking digital experiences.
-              </p>
-
-              <p>
-                From the first sketch to the final interaction, I care about
-                every little detail.
-              </p>
-
-              <a class="text-link" href="#contact">
-                <span> MORE ABOUT WORKING TOGETHER </span>
-
-                <span class="circle-arrow">↗</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- EXPERTISE SECTION -->
-      <section
-        class="expertise section-shell"
-        id="expertise"
-        aria-labelledby="expertise-heading"
-      >
-        <div class="section-side">
-          <span class="section-index"> [ 02 / EXPERTISE ] </span>
-
-          <span class="side-line"></span>
-
-          <span class="side-note"> THINGS I LOVE TO DO </span>
-        </div>
-
-        <div class="expertise-main">
-          <p class="eyebrow muted reveal">WHAT I BRING TO THE TABLE</p>
-
-          <h2 id="expertise-heading" class="section-big-heading reveal">
-            A LITTLE BIT<br />
-            OF <em>EVERYTHING.</em>
-          </h2>
-
-          <div class="skill-rows">
-            <div class="skill-row reveal">
-              <span class="skill-num">01</span>
-
-              <h3>UI / UX Design</h3>
-
-              <p>
-                Interfaces, visual systems, prototypes, user-centered
-                experiences.
-              </p>
-
-              <span class="skill-plus">✳</span>
+              <span class="book-footer">
+                A CREATIVE HANDBOOK — VOL. 01
+                <b>✳</b>
+              </span>
             </div>
 
-            <div class="skill-row reveal">
-              <span class="skill-num">02</span>
-
-              <h3>Front-end Development</h3>
-
-              <p>
-                Responsive, interactive experiences crafted with modern web
-                tools.
-              </p>
-
-              <span class="skill-plus">✳</span>
+            <div class="visual-bottom">
+              <span>THINK. EXPLORE. CREATE.</span>
+              <span>2024</span>
             </div>
 
-            <div class="skill-row reveal">
-              <span class="skill-num">03</span>
+            <span class="visual-view"> VIEW PROJECT ↗ </span>
+          </a>
 
-              <h3>Creative Collaboration</h3>
-
-              <p>
-                Exploring ideas together and shaping them into something
-                memorable.
-              </p>
-
-              <span class="skill-plus">✳</span>
-            </div>
-          </div>
-
-          <!-- TECHNOLOGIES -->
-          <div class="toolbox reveal">
-            <span class="eyebrow muted"> MY TOOLBOX — </span>
-
+          <div class="project-details">
             <div>
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>JAVASCRIPT</span>
-              <span>REACT</span>
-              <span>NODE.JS</span>
-              <span>FIGMA</span>
-              <span>GIT</span>
-              <span>GITHUB</span>
-              <span>PHOTOSHOP</span>
+              <span class="project-number"> 01 / CASE STUDY </span>
+
+              <h3>
+                SPLASH<br />
+                <em>STUDIO</em>
+              </h3>
+
+              <p>
+              <p>
+                A bold fashion e-commerce website concept
+                combining expressive typography, striking
+                visuals, and a modern shopping experience.
+              </p>
+              </p>
+
+              <div class="project-pills">
+                <span>UI/UX</span>
+                <span>FIGMA</span>
+                <span>HTML</span>
+                <span>CSS</span>
+              </div>
             </div>
+
+            <a class="project-action" href="https://www.behance.net/gallery/256083355/AeroLoft" target="_blank"
+              rel="noopener noreferrer" aria-label="View Guide for designers on Behance">
+              ↗
+            </a>
           </div>
-        </div>
-      </section>
+        </article>
 
-      <!-- PROJECTS SECTION -->
-      <section class="work" id="work" aria-labelledby="work-heading">
-        <div class="work-heading section-padding">
-          <div class="work-heading-top">
-            <span class="section-index"> [ 03 / SELECTED PROJECTS ] </span>
+        <!-- PROJECT 02 -->
+        <article class="project project-smart" data-project="02">
 
-            <span> 2024 — 2026 / PERSONAL SELECTION </span>
-          </div>
+          <a class="project-visual" href="https://www.behance.net/gallery/253284479/Met-Museum" target="_blank"
+            rel="noopener noreferrer" aria-label="View The Met Museum on Behance">
 
-          <h2 id="work-heading" class="reveal">
-            SELECTED<br />
-            <em> WORK<span class="headline-period">.</span> </em>
-          </h2>
+            <img src="pic/project2.png" alt="The Met Museum" class="project-cover" />
 
-          <p class="work-summary reveal">
-            A few projects where strategy, creativity and pixels came together.
-          </p>
-        </div>
+            <span class="visual-view">VIEW PROJECT ↗</span>
 
-        <div class="projects">
-          <!-- PROJECT 01 -->
-          <article class="project project-guide" data-project="01">
-            <a
-              class="project-visual"
-              href="https://www.behance.net/gallery/256083355/AeroLoft"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="View AeroLoft project on Behance"
-            >
-              <img
-                src="pic/project.png"
-                alt="SPLASH Studio"
-                class="project-cover"
-              />
+          </a>
 
-              <div class="visual-top">
-                <span>DESIGN / STUDIO</span>
-                <span>CASE 001 ↗</span>
+          <div class="project-details">
+            <div>
+
+              <span class="project-number">02 / CASE STUDY</span>
+
+              <h3>
+                THE MET<br />
+                <em>MUSEUM</em>
+              </h3>
+
+              <p>
+                An editorial museum website concept that
+                brings art and culture to life through
+                immersive visuals, elegant typography,
+                and intuitive navigation.
+              </p>
+
+              <div class="project-pills">
+                <span>UI/UX</span>
+                <span>FIGMA</span>
+                <span>WEB DESIGN</span>
               </div>
 
-              <!-- CSS BOOK MOCKUP -->
-              <div class="guide-book guide-book-back">
-                <div class="guide-sun"></div>
-              </div>
+            </div>
 
-              <div class="guide-book guide-book-front">
-                <div class="book-grid"></div>
-
-                <div class="book-top">
-                 SPLASH<br />
-                  STUDIO
-                </div>
-
-                <strong>
-                  MAKE<br />
-                  <i>GOOD</i><br />
-                  DESIGN.
-                </strong>
-
-                <span class="book-footer">
-                  A CREATIVE HANDBOOK — VOL. 01
-                  <b>✳</b>
-                </span>
-              </div>
-
-              <div class="visual-bottom">
-                <span>THINK. EXPLORE. CREATE.</span>
-                <span>2024</span>
-              </div>
-
-              <span class="visual-view"> VIEW PROJECT ↗ </span>
+            <a class="project-action" href="https://www.behance.net/gallery/253284479/Met-Museum" target="_blank"
+              rel="noopener noreferrer" aria-label="View The Met Museum on Behance">
+              ↗
             </a>
 
-            <div class="project-details">
-              <div>
-                <span class="project-number"> 01 / CASE STUDY </span>
+          </div>
 
-                <h3>
-                  SPLASH<br />
-                  <em>STUDIO</em>
-                </h3>
+        </article>
 
-                <p>
-                <p>
-  A bold fashion e-commerce website concept
-  combining expressive typography, striking
-  visuals, and a modern shopping experience.
-</p>
-                </p>
+        <!-- PROJECT 03 -->
+        <article class="project project-hab" data-project="03">
 
-                <div class="project-pills">
-                  <span>UI/UX</span>
-                  <span>FIGMA</span>
-                  <span>HTML</span>
-                  <span>CSS</span>
-                </div>
+          <a class="project-visual" href="https://www.behance.net/gallery/204300345/Guide-for-designers" target="_blank"
+            rel="noopener noreferrer" aria-label="View Guide for Designers on Behance">
+
+            <img src="pic/project3.png" alt="Guide for Designers" class="project-cover" />
+
+            <span class="visual-view">VIEW PROJECT ↗</span>
+
+          </a>
+
+          <div class="project-details">
+            <div>
+
+              <span class="project-number">03 / CASE STUDY</span>
+
+              <h3>
+                GUIDE FOR<br />
+                <em>DESIGNERS</em>
+              </h3>
+
+              <p>
+                An educational platform for designers focused
+                on UX principles, creative tools, and interactive
+                learning. Helping designers develop their skills
+                through practical exercises.
+              </p>
+
+              <div class="project-pills">
+                <span>UI/UX</span>
+                <span>FIGMA</span>
+                <span>WEB DESIGN</span>
               </div>
 
-              <a
-                class="project-action"
-                href="https://www.behance.net/gallery/256083355/AeroLoft"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="View Guide for designers on Behance"
-              >
-                ↗
-              </a>
             </div>
-          </article>
 
-         <!-- PROJECT 02 -->
-<article class="project project-smart" data-project="02">
+            <a class="project-action" href="https://www.behance.net/gallery/204300345/Guide-for-designers"
+              target="_blank" rel="noopener noreferrer" aria-label="View Guide for Designers on Behance">
+              ↗
+            </a>
 
-  <a
-    class="project-visual"
-    href="https://www.behance.net/gallery/253284479/Met-Museum"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="View The Met Museum on Behance"
-  >
+          </div>
 
-    <img
-      src="pic/project2.png"
-      alt="The Met Museum"
-      class="project-cover"
-    />
-
-    <span class="visual-view">VIEW PROJECT ↗</span>
-
-  </a>
-
-  <div class="project-details">
-    <div>
-
-      <span class="project-number">02 / CASE STUDY</span>
-
-      <h3>
-        THE MET<br />
-        <em>MUSEUM</em>
-      </h3>
-
-      <p>
-        An editorial museum website concept that
-        brings art and culture to life through
-        immersive visuals, elegant typography,
-        and intuitive navigation.
-      </p>
-
-      <div class="project-pills">
-        <span>UI/UX</span>
-        <span>FIGMA</span>
-        <span>WEB DESIGN</span>
-      </div>
-
-    </div>
-
-    <a
-      class="project-action"
-      href="https://www.behance.net/gallery/253284479/Met-Museum"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="View The Met Museum on Behance"
-    >
-      ↗
-    </a>
-
-  </div>
-
-</article>
-
-         <!-- PROJECT 03 -->
-<article class="project project-hab" data-project="03">
-
-  <a
-    class="project-visual"
-    href="https://www.behance.net/gallery/204300345/Guide-for-designers"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="View Guide for Designers on Behance"
-  >
-
-    <img
-      src="pic/project3.png"
-      alt="Guide for Designers"
-      class="project-cover"
-    />
-
-    <span class="visual-view">VIEW PROJECT ↗</span>
-
-  </a>
-
-  <div class="project-details">
-    <div>
-
-      <span class="project-number">03 / CASE STUDY</span>
-
-      <h3>
-        GUIDE FOR<br />
-        <em>DESIGNERS</em>
-      </h3>
-
-      <p>
-        An educational platform for designers focused
-        on UX principles, creative tools, and interactive
-        learning. Helping designers develop their skills
-        through practical exercises.
-      </p>
-
-      <div class="project-pills">
-        <span>UI/UX</span>
-        <span>FIGMA</span>
-        <span>WEB DESIGN</span>
-      </div>
-
-    </div>
-
-    <a
-      class="project-action"
-      href="https://www.behance.net/gallery/204300345/Guide-for-designers"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="View Guide for Designers on Behance"
-    >
-      ↗
-    </a>
-
-  </div>
-
-</article>
+        </article>
 
         <!-- MORE PROJECTS -->
         <div class="work-more">
           <span>WANT TO SEE MORE?</span>
 
-          <a
-            href="https://www.behance.net/5d5ce656"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://www.behance.net/5d5ce656" target="_blank" rel="noopener noreferrer">
             EXPLORE MY BEHANCE
             <span>↗</span>
           </a>
         </div>
-      </section>
+    </section>
 
-      <!-- CONTACT SECTION -->
-      <section class="contact" id="contact" aria-labelledby="contact-heading">
-        <div class="contact-orb" aria-hidden="true">✳</div>
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <div class="contact-orb" aria-hidden="true">✳</div>
 
-        <div class="contact-inner">
-          <div class="contact-top">
-            <span class="section-index"> [ 04 / GET IN TOUCH ] </span>
+      <div class="contact-inner">
+        <div class="contact-top">
+          <span class="section-index"> [ 04 / GET IN TOUCH ] </span>
 
-            <span> HAVE AN IDEA? LET'S TALK. </span>
-          </div>
-
-          <p class="eyebrow contact-eyebrow reveal">HAVE A PROJECT IN MIND?</p>
-
-          <h2 id="contact-heading" class="reveal">
-            LET'S MAKE<br />
-            <em>IT HAPPEN.</em>
-          </h2>
-
-          <a
-            class="contact-email reveal"
-            href="mailto:simitopolis1998@gmail.com"
-          >
-            <span> SIMITOPOLIS1998@GMAIL.COM </span>
-
-            <span class="mail-arrow">↗</span>
-          </a>
-
-          <div class="contact-bottom">
-            <p>
-              I’m always open to interesting projects,<br />
-              creative collaborations and new opportunities.
-            </p>
-          </div>
+          <span> HAVE AN IDEA? LET'S TALK. </span>
         </div>
-      </section>
-    </main>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-top">
-        <a class="footer-brand" href="#top"> a<span>.</span> </a>
+        <p class="eyebrow contact-eyebrow reveal">HAVE A PROJECT IN MIND?</p>
 
-        <div class="footer-links">
-          <a
-            href="https://github.com/Simitopolis"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GITHUB ↗
-          </a>
+        <h2 id="contact-heading" class="reveal">
+          LET'S MAKE<br />
+          <em>IT HAPPEN.</em>
+        </h2>
 
-          <a
-            href="https://www.linkedin.com/in/anastasiiaserhiieva/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LINKEDIN ↗
-          </a>
+        <a class="contact-email reveal" href="mailto:simitopolis1998@gmail.com">
+          <span> SIMITOPOLIS1998@GMAIL.COM </span>
 
-          <a
-            href="https://www.behance.net/5d5ce656"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            BEHANCE ↗
-          </a>
+          <span class="mail-arrow">↗</span>
+        </a>
 
-          <a
-            href="https://www.instagram.com/ssergeeva8/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            INSTAGRAM ↗
-          </a>
+        <div class="contact-bottom">
+          <p>
+            I’m always open to interesting projects,<br />
+            creative collaborations and new opportunities.
+          </p>
         </div>
       </div>
+    </section>
+  </main>
 
-      <div class="footer-bottom">
-        <span>
-          © <span id="year">2026</span>
-          ANASTASIIA SERHIIEVA.
-        </span>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <a class="footer-brand" href="#top"> a<span>.</span> </a>
 
-       <a
-  href="#top"
-  onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;"
->
-  BACK TO TOP ↑
-</a>
+      <div class="footer-links">
+        <a href="https://github.com/Simitopolis" target="_blank" rel="noopener noreferrer">
+          GITHUB ↗
+        </a>
 
-        <span> DESIGN IS IN THE DETAILS ✳ </span>
+        <a href="https://www.linkedin.com/in/anastasiiaserhiieva/" target="_blank" rel="noopener noreferrer">
+          LINKEDIN ↗
+        </a>
+
+        <a href="https://www.behance.net/5d5ce656" target="_blank" rel="noopener noreferrer">
+          BEHANCE ↗
+        </a>
+
+        <a href="https://www.instagram.com/ssergeeva8/" target="_blank" rel="noopener noreferrer">
+          INSTAGRAM ↗
+        </a>
       </div>
-    </footer>
-  </body>
+    </div>
+
+    <div class="footer-bottom">
+      <span>
+        © <span id="year">2026</span>
+        ANASTASIIA SERHIIEVA.
+      </span>
+
+      <a href="#top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;">
+        BACK TO TOP ↑
+      </a>
+
+      <span> DESIGN IS IN THE DETAILS ✳ </span>
+    </div>
+  </footer>
+</body>
+
 </html>
